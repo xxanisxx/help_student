@@ -4,7 +4,19 @@ first you need to clone this project in your machine
 
   
     
-    ![Capture](https://user-images.githubusercontent.com/22977755/58673172-32826f80-8342-11e9-9c53-05b216516d6e.PNG)
+      git clone https://github.com/xxanisxx/help_student.git  
+    
+    cd Mini  
+    
+    docker-composer up -d
+    
+    docker-compose exec php-fpm bash
+    
+    compose install 
+    
+    bin/console doctrine:migration:migrate
+    
+    bin/console doctrine:fixtures:load
 
     
     
